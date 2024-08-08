@@ -1,7 +1,9 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.demo;
 
-import com.stephenshen.sssharding.demo.User;
-import com.stephenshen.sssharding.demo.UserMapper;
+import com.stephenshen.sssharding.config.ShardingAutoConfiguration;
+import com.stephenshen.sssharding.mybatis.ShardingMapperFactoryBean;
+import com.stephenshen.sssharding.demo.mapper.UserMapper;
+import com.stephenshen.sssharding.demo.model.User;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
@@ -12,7 +14,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import(ShardingAutoConfiguration.class)
-@MapperScan(value = "com.stephenshen.sssharding.demo", factoryBean = ShardingMapperFactoryBean.class)
+@MapperScan(value = "com.stephenshen.sssharding.demo.mapper", factoryBean = ShardingMapperFactoryBean.class)
 public class SsShardingApplication {
 
     public static void main(String[] args) {
@@ -49,8 +51,8 @@ public class SsShardingApplication {
         User user2 = userMapper.findById(id);
         System.out.println(" ===> find = " + user2);
 
-//            System.out.println(" ===> 5.test delete ...");
-//            int deleted = userMapper.delete(id);
-//            System.out.println(" ===> deleted = " + deleted);
+        System.out.println(" ===> 5.test delete ...");
+        int deleted = userMapper.delete(id);
+        System.out.println(" ===> deleted = " + deleted);
     }
 }

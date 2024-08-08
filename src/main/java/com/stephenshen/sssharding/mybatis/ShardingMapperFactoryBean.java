@@ -1,6 +1,8 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.mybatis;
 
-import com.stephenshen.sssharding.demo.User;
+import com.stephenshen.sssharding.engine.ShardingContext;
+import com.stephenshen.sssharding.engine.ShardingResult;
+import com.stephenshen.sssharding.demo.model.User;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.Configuration;

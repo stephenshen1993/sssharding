@@ -1,6 +1,5 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.mybatis;
 
-import com.stephenshen.sssharding.demo.User;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.plugin.Interceptor;

@@ -1,5 +1,6 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.config;
 
+import com.stephenshen.sssharding.datasource.ShardingDataSource;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

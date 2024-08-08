@@ -1,5 +1,6 @@
-package com.stephenshen.sssharding.demo;
+package com.stephenshen.sssharding.demo.mapper;
 
+import com.stephenshen.sssharding.demo.model.User;
 import org.apache.ibatis.annotations.*;
 
 /**

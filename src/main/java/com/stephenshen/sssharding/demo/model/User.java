@@ -1,4 +1,4 @@
-package com.stephenshen.sssharding.demo;
+package com.stephenshen.sssharding.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

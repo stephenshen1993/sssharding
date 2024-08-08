@@ -1,6 +1,9 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.datasource;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.stephenshen.sssharding.engine.ShardingContext;
+import com.stephenshen.sssharding.engine.ShardingResult;
+import com.stephenshen.sssharding.config.ShardingProperties;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 import java.util.LinkedHashMap;

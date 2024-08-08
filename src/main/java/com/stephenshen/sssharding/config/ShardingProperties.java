@@ -1,4 +1,4 @@
-package com.stephenshen.sssharding;
+package com.stephenshen.sssharding.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
