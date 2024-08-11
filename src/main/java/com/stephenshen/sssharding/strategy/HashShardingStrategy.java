@@ -21,10 +21,10 @@ public class HashShardingStrategy implements ShardingStrategy {
         this.algorithmExpression = properties.getProperty("algorithmExpression");
     }
 
-    @Override
-    public List<String> getShardingColumns() {
-        return List.of(this.shardingColumn);
-    }
+//    @Override
+//    public List<String> getShardingColumns() {
+//        return List.of(this.shardingColumn);
+//    }
 
     @Override
     public String doSharding(List<String> availableTargetNames, String logicTableName, Map<String, Object> shardingParams) {
